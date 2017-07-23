@@ -1,1 +1,0 @@
-Minneanalytics FARCON bot
