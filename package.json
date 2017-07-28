@@ -1,39 +1,31 @@
 {
-  "name": "botkit-starter-slack",
-  "version": "0.0.2",
-  "description": "A starter kit for building a custom Slack bot with Botkit Studio",
-  "main": "bot.js",
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+
+  "name": "my-glitch-app",
+  "version": "0.0.1",
+  "description": "What am I about?",
+  "main": "server.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "botkit": "^0.5",
-    "botkit-middleware-apiai": "0.1.1",
-    "botkit-storage-mongo": "^1.0.6",
-    "dashbot": "0.7.4",
-    "debug": "^2.3.3",
-    "express": "^4.14.0",
-    "node-env-file": "^0.1.8",
-    "pg": "^7.0.2",
-    "querystring": "^0.2.0",
-    "request": "^2.79.0",
-    "wordfilter": "^0.2.6"
+    "express": "^4.15.3",
+    "body-parser": "^1.17.2",
+    "fast-csv": "^2.4.0",
+    "moment": "^2.18.1"
   },
-  "devDependencies": {},
+  "engines": {
+    "node": "8.x"
+  },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/howdyai/botkit-starter-slack.git"
+    "url": "https://glitch.com/edit/#!/welcome-project"
   },
-  "bugs": {
-    "url": "https://github.com/howdyai/botkit-starter-slack/issues"
-  },
-  "homepage": "https://github.com/howdyai/botkit-starter-slack",
+  "license": "MIT",
   "keywords": [
-    "bots",
-    "chatbots",
-    "slack"
-  ],
-  "author": "ben@howdy.ai",
-  "license": "ISC"
+    "node",
+    "glitch",
+    "express"
+  ]
 }
