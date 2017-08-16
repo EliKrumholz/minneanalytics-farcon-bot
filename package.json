@@ -11,10 +11,13 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "apiai": "4.0.3",
     "express": "^4.15.3",
     "body-parser": "^1.17.2",
     "fast-csv": "^2.4.0",
-    "moment": "^2.18.1"
+    "fusejs": "1.4.3",
+    "moment": "^2.18.1",
+    "monk": "^6.0.3"
   },
   "engines": {
     "node": "8.x"
