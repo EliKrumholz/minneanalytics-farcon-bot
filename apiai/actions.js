@@ -61,16 +61,10 @@ module.exports = function(req, res, farconData) {
   } else if (action === 'speaker.bio') {
     var filteredTalks = talks.filter((t) => {return t.FullName.trim().toLowerCase().includes(parameters.FARCON2017_Speakers.trim().toLowerCase())});
     console.log(filteredTalks);
-    if (filteredTalks.length === 1) {
+    if (filteredTalks.length >= 1) {
       reply = {
         'speech': `*${filteredTalks[0].FullName}* is a *${filteredTalks[0].Position}* at *${filteredTalks[0].Organization}*: ${filteredTalks[0].LinkedIn}`,
         'displayText': `*${filteredTalks[0].FullName}* is a *${filteredTalks[0].Position}* at *${filteredTalks[0].Organization}*`
-      };
-    } else if (filteredTalks.length > 1) {
-      var presenters = buildPresenterList(filteredTalks);
-      reply = {
-        'speech': `I found ${filteredTalks.length} people, try again with the full name: *${presenters}*`,
-        'displayText': `I found ${filteredTalks.length} people, try again with the full name: *${presenters}*`
       };
     } else {
       reply = {
